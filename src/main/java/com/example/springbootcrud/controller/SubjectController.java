@@ -29,6 +29,7 @@ public class SubjectController {
         subjectService.updateSubject(id, subject);
     }
 
+    @RequestMapping(method = RequestMethod.DELETE, value="/subjects/{id}")
     public void deleteSubject(@PathVariable String id) {
         subjectService.deleteSubject(id);
     }
